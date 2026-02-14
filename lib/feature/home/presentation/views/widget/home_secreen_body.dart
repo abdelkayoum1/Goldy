@@ -23,7 +23,9 @@ class HomeSecreenBody extends StatelessWidget {
         SizedBox(height: 5),
         CustomerBotton(
           text: TextString.textsliver,
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).push(AppRoute.khomesilver);
+          },
           color: AppColor.secondecolor,
         ),
       ],

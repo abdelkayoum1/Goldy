@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:goldy/constante.dart';
 import 'package:goldy/core/utile/service_locator.dart';
 import 'package:goldy/feature/home/data/home_repo/home_repo_impl.dart';
-import 'package:goldy/feature/home/presentation/views/cubit/cubit/gold_cubit_cubit.dart';
+import 'package:goldy/feature/home/presentation/views/cubit/gold_cubit/gold_cubit_cubit.dart';
 import 'package:goldy/feature/home/presentation/views/home_Secreen.dart';
 import 'package:goldy/core/utile/app_route.dart';
 

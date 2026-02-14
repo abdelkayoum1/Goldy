@@ -4,4 +4,6 @@ import 'package:goldy/feature/home/data/model/gold_model.dart';
 
 abstract class HomeRepo {
   Future<Either<Failure, GoldModel>> getgold();
+
+  Future<Either<Failure, GoldModel>> getsilver();
 }

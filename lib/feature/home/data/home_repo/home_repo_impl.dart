@@ -23,4 +23,20 @@ class HomeRepoImpl implements HomeRepo {
       return Left(FailureServer(error: e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, GoldModel>> getsilver() async {
+    try {
+      var data = await apiService.get(point: 'XAG');
+
+      GoldModel silver = GoldModel.fromJson(data);
+
+      return Right(silver);
+    } catch (e) {
+      if (e is DioException) {
+        return Left(FailureServer(error: e.message));
+      }
+      return Left(FailureServer(error: e.toString()));
+    }
+  }
 }
